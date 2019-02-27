@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './index.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import  { Slider } from './components/ThumbnailsSlider/Slider/Slider';
+import  { Wrap } from './components/SimpleSlider/Wrap/Wrap';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <section>
+        <Wrap />
+        <Slider />
+    </section>,
+    document.getElementById('root')
+);
+

@@ -1,0 +1,38 @@
+.slider {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+    white-space: nowrap;
+
+    .sliderWrap {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .arrow {        
+        cursor: pointer;
+        fill: rgba(255, 255, 255, 0.6);
+        transition: fill 0.3s;
+        position: absolute;
+        top: 50%;
+
+        &:hover {
+            fill: rgba(255, 255, 255, 1);
+        }
+
+        &.arrowLeft {
+            left: 20px;
+            transform: translateY(-50%)
+        }
+
+        &.arrowRight {
+            transform:  translateY(-50%) rotate(180deg) ;
+            right: 20px;
+        }
+    }
+
+    
+}
